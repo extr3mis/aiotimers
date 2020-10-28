@@ -1,3 +1,7 @@
+"""
+Timer support for asyncio.
+"""
+
 import asyncio
 
 class Timer:
