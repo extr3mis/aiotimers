@@ -10,7 +10,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # http://packaging.python.org/en/latest/tutorial.html#version
-    version='1.1.0',
+    version='1.1.1',
 
     description='Asynchronous timers for Python, object oriented and simple usage.',
     long_description='',
