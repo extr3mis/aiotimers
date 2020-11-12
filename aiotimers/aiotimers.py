@@ -24,7 +24,7 @@ class Timer:
         """
         self._timeout = timeout
         self._callback = callback
-        self._task = asyncio.ensure_future(self._job())
+        self._task = asyncio.create_task(self._job())
         self._callback_args = callback_args
         self._callback_kwargs = callback_kwargs
         
@@ -50,4 +50,4 @@ class Timer:
        Ends the timer early, and calls the callback coroutine.
        """
         self._task.cancel()
-        asyncio.ensure_future(self._call_callback())
+        asyncio.create_task(self._call_callback())
